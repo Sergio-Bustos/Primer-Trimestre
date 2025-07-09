@@ -1,72 +1,72 @@
-# # Ejercicio 1: Verificar si un numero es positivo,negativo o es cero
+# Ejercicio 1: Verificar si un numero es positivo,negativo o es cero
 
-# print("------------------ Ejercicio 1 --------------------")
+print("------------------ Ejercicio 1 --------------------")
 
-# numero1 = float(input("Ingresa un numero: "))
-# if numero1 > 0:
-#     print(f"El numero 1 ({numero1}) es mayor que cero osea es positivo ")
-# elif numero1 < 0:
-#     print(f"El numero 1 ({numero1}) es menor que cero osea es negativo")
-# else:
-#     print(f"El numero 1 ({numero1}) es 0")
+numero1 = float(input("Ingresa un numero: "))
+if numero1 > 0:
+    print(f"El numero 1 ({numero1}) es mayor que cero osea es positivo ")
+elif numero1 < 0:
+    print(f"El numero 1 ({numero1}) es menor que cero osea es negativo")
+else:
+    print(f"El numero 1 ({numero1}) es 0")
 
-# # Ejercicio 2: Calcula el mayor de dos numeros ingresados
+# Ejercicio 2: Calcula el mayor de dos numeros ingresados
 
-# print("------------------ Ejercicio 2 --------------------")
+print("------------------ Ejercicio 2 --------------------")
 
-# num1 = float(input("Ingresa un numero 1: "))
-# num2 = float(input("Ingresa un numero 2: "))
-# if num1 > num2:
-#     print(f"El numero 1 ({num1}) es mayor que el numero 2 ({num2})")
-# elif num2 > num1:
-#     print(f"El numero 2 ({num2}) es mayor que el numero 1 ({num1})")
-# else:
-#     print(f"Los numeros ({num1}), ({num2}) son iguales")
+num1 = float(input("Ingresa un numero 1: "))
+num2 = float(input("Ingresa un numero 2: "))
+if num1 > num2:
+    print(f"El numero 1 ({num1}) es mayor que el numero 2 ({num2})")
+elif num2 > num1:
+    print(f"El numero 2 ({num2}) es mayor que el numero 1 ({num1})")
+else:
+    print(f"Los numeros ({num1}), ({num2}) son iguales")
 
-# # Ejercicio 3: Determina si un numero es par o impar
+# Ejercicio 3: Determina si un numero es par o impar
 
-# print("------------------ Ejercicio 3 --------------------")
+print("------------------ Ejercicio 3 --------------------")
 
-# num11 = float(input("Ingresa un numero 1: "))
-# numero = 2
-# if num11 % numero == 0:
-#     print(f"El numero ({num11}) es par")
-# else:
-#     print(f"El numero ({num11}) no es par")
+num11 = float(input("Ingresa un numero 1: "))
+numero = 2
+if num11 % numero == 0:
+    print(f"El numero ({num11}) es par")
+else:
+    print(f"El numero ({num11}) no es par")
 
 
-# # Ejercicio 4: Dado un numero verifica si esta entre 10 y 20
+# Ejercicio 4: Dado un numero verifica si esta entre 10 y 20
 
-# print("------------------ Ejercicio 4 --------------------")
+print("------------------ Ejercicio 4 --------------------")
 
-# num22 = float(input("Ingresa un numero: "))
-# if num22 >= 10 and num22 <= 20:
-#     print(f"El numero ({num22}) esta entre 10 y 20")
-# else:
-#     print(f"El numero ({num22}) no esta entre 10 y 20")
+num22 = float(input("Ingresa un numero: "))
+if num22 >= 10 and num22 <= 20:
+    print(f"El numero ({num22}) esta entre 10 y 20")
+else:
+    print(f"El numero ({num22}) no esta entre 10 y 20")
 
-# # Ejercicio 5: Dados tres numeros,encuentra el mayor usando condicionales
+# Ejercicio 5: Dados tres numeros,encuentra el mayor usando condicionales
 
-# print("------------------ Ejercicio 5 --------------------")
+print("------------------ Ejercicio 5 --------------------")
 
-# num_uno = float(input("Ingresa un primer numero: "))
-# num_dos = float(input("Ingresa un segundo numero: "))
-# num_tres = float(input("Ingresa un tercer numero: "))
+num_uno = float(input("Ingresa un primer numero: "))
+num_dos = float(input("Ingresa un segundo numero: "))
+num_tres = float(input("Ingresa un tercer numero: "))
 
-# if num_uno > num_dos and num_uno > num_tres:
-#     print(f"El numero uno ({num_uno}) es mayor que el numero dos: {num_dos} y que el numero tres: {num_tres}")
-# else: 
-#     print(f"El numero 1 ({num_uno}) no es mayor que el numero dos: {num_dos} y que el numero tres: {num_tres}")
+if num_uno > num_dos and num_uno > num_tres:
+    print(f"El numero uno ({num_uno}) es mayor que el numero dos: {num_dos} y que el numero tres: {num_tres}")
+else: 
+    print(f"El numero 1 ({num_uno}) no es mayor que el numero dos: {num_dos} y que el numero tres: {num_tres}")
 
-# if num_dos > num_uno and num_dos > num_tres:
-#     print(f"El numero 2 ({num_dos}) es mayor que el numero uno: {num_uno} y que  el numero tres: {num_tres}")
-# else:
-#     print(f"El numero 2 ({num_dos}) no es mayor que el numero uno: {num_uno} y que el numero tres: {num_tres}")
+if num_dos > num_uno and num_dos > num_tres:
+    print(f"El numero 2 ({num_dos}) es mayor que el numero uno: {num_uno} y que  el numero tres: {num_tres}")
+else:
+    print(f"El numero 2 ({num_dos}) no es mayor que el numero uno: {num_uno} y que el numero tres: {num_tres}")
 
-# if num_tres > num_dos and num_tres > num_uno:
-#     print(f"El numero tres ({num_tres}) es mayor que el numero dos: {num_dos} y que el numero uno: {num_uno}")
-# else:
-#     print(f"El numero tres ({num_tres}) no es mayor que el numero dos: {num_dos} y que el numero uno: {num_uno}")
+if num_tres > num_dos and num_tres > num_uno:
+    print(f"El numero tres ({num_tres}) es mayor que el numero dos: {num_dos} y que el numero uno: {num_uno}")
+else:
+    print(f"El numero tres ({num_tres}) no es mayor que el numero dos: {num_dos} y que el numero uno: {num_uno}")
 
 
 # Ejercicio 6: Calcula el precio final con un 10% de descuento si el total es mayor a 100$
@@ -105,6 +105,7 @@ else:
 
 # Ejercicio 9: Determina si un numero es multiplo de 5 y de 3 al mismo tiempo
 
+print("------------------ Ejercicio 9 --------------------")
 
 numero = float(input("Ingresa un numero: "))
 if numero % 3 == 0 and numero % 5 == 0:
@@ -113,6 +114,8 @@ else:
     print(f"El numero {numero} no es multiplo de 5 y 3")
 
 # Ejercicio 10: Dado un numero,verifica si es divisibe entre dos numeros dados 
+
+print("------------------ Ejercicio 10 --------------------")
 
 numerouno = float(input("Ingresa un primer numero: "))
 numerodos = float(input("Ingresa un numero por el cual creas que es divisible: "))
@@ -132,5 +135,5 @@ if numerotres % numerouno and numerotres % numerodos == 0:
     print(f"El numero {numerotres} es divisible por el numero {numerouno} y por el {numerodos}")
 else:
     print(f"El numero {numerotres} no es divisible por el numero {numerouno} ni por el numero {numerodos}")
-    
+
 

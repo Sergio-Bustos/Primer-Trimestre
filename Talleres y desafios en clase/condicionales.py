@@ -1,3 +1,5 @@
+# Ejercicios de condicionales en clase
+
 # Ejercicio 1: Verificar si un numero es positivo,negativo o es cero
 
 print("------------------ Ejercicio 1 --------------------")

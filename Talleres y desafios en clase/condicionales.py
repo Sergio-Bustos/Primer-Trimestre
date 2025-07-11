@@ -451,9 +451,6 @@ elif edad333 > 18 and edad333 < 64:
 else:
     print("Eres un adulto mayor lo sentimos")
 
-
-# 17 - Pide el nombre de una ciudad. Si está en una tupla, muestra que es capital; si no, muestra “ciudad secundaria”.
-
 print("------Ejercicio 17 ------")
 
 # 17 - Pide el nombre de una ciudad. Si está en una tupla, muestra que es capital; si no, muestra “ciudad secundaria”.

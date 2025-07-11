@@ -58,7 +58,7 @@ num_dos = float(input("Ingresa un segundo numero no puede ser igual al otro: "))
 num_tres = float(input("Ingresa un tercer numero no puede ser igual al otro: "))
 
 if num_uno > num_dos and num_uno > num_tres:
-    print(f"El número mayor es: {num1}")
+    print(f"El número mayor es: {num_uno}")
 elif num_dos > num_uno and num_dos > num_tres:
     print(f"El número mayor es: {num2}")
 elif num_tres > num_uno and num_tres > num2:
@@ -73,7 +73,7 @@ print("------------------ Ejercicio 6 --------------------")
 precio = float(input("¿A cuanto esta el precio de la papa actualmente?: "))
 if precio > 100:
     prod = precio * 0.10
-    preciofinal = prod - precio
+    preciofinal = precio - prod
     print(f"El precio final con el 10% de descuento de {precio}$ de la papa  es {prod}$")
 else:
     print(f"El producto esta en menos que 100$,es un buen precio y no se le hara descuento")
@@ -153,7 +153,7 @@ print("------Ejercicio 2 ------")
 estatura = float(input("Ingresa tu estatura actual por favor: "))
 if estatura < 1.5:
     print(f"Eres bajo,lo sentimos,en un años crecerás! :)")
-elif estatura > 1.5  and estatura < 1.8:
+elif estatura >= 1.5  and estatura <= 1.8:
     print(f"Eres considera con una estatura media,felicidades estas en una altura promedia! :)")
 else:
     print(f"Eres considera alto,felicitaciones! :)")
@@ -228,7 +228,7 @@ temp = float(input("Ingresa la temperatura actual de Palmira en grados centigrad
 
 if temp < 10:
     print(f"Hace mucho frio en Palmira con esos {temp} °C como aguantas ese clima!")
-elif temp < 10 and temp < 25:
+elif temp > 10 and temp <= 25:
     print(f"La temperatura en Palmira es de {temp} °C lo que esta templado,que bonito dia y clima juntos!")
 else:
     print(f"Con esos {temp} °C hace mucho calor en Palmira,como aguantas eso!")
@@ -442,9 +442,9 @@ else:
 print("------Ejercicio 16 ------")
 
 edad333 = int(input("Ingresa tu edad: "))
-if edad333 > 0 and edad333 < 12:
+if edad333 > 0 and edad333 <= 12:
     print(f"Eres un niño aun por tener {edad333} años")
-elif edad333 > 13 and edad333 < 17:
+elif edad333  >= 13 and edad333 <= 17:
     print(f"Eres un adolescente por tener {edad333} años,que dura etapa!")
 elif edad333 > 18 and edad333 < 64:
     print("Eres un adulto ya,felicidades")
@@ -456,18 +456,24 @@ else:
 
 print("------Ejercicio 17 ------")
 
+# 17 - Pide el nombre de una ciudad. Si está en una tupla, muestra que es capital; si no, muestra “ciudad secundaria”.
 
-tuplaaaa = ("Bogota","Palmira","Cali","Washintong D.C","Caracas")
-ciudaddd = input("Ingresa una ciudad,empezando por mayusculas por favor: ")
+print("------Ejercicio 17 ------")
+
+tuplaaaa = ("Bogota", "Palmira", "Cali", "Washington D.C.", "Caracas")
+ciudaddd = input("Ingresa una ciudad, empezando por mayúscula por favor: ")
+
 if ciudaddd in tuplaaaa:
     if ciudaddd == "Bogota":
-        print(f"La ciudad {ciudaddd} es capital de Colombia y esta en la tupla: {tuplaaaa}")
-elif ciudaddd == "Washintong DC":
-    print(f"La ciudad {ciudaddd} es capital de Estados Unidos y esta en la tupla: {tuplaaaa}")
-elif ciudaddd == "Caracas":
-    print(f"La ciudad {ciudaddd} es capital de Venezuela y esta en la tupla: {tuplaaaa}")
+        print(f"La ciudad {ciudaddd} es capital de Colombia y está en la tupla: {tuplaaaa}")
+    elif ciudaddd == "Washington D.C.":
+        print(f"La ciudad {ciudaddd} es capital de Estados Unidos y está en la tupla: {tuplaaaa}")
+    elif ciudaddd == "Caracas":
+        print(f"La ciudad {ciudaddd} es capital de Venezuela y está en la tupla: {tuplaaaa}")
+    else:
+        print(f"La ciudad {ciudaddd} está en la tupla, pero no es capital de país.")
 else:
-    print(f"La ciudad {ciudaddd} no es capital de  ningun pais y no esta en la tupla: {tuplaaaa}")
+    print(f"La ciudad {ciudaddd} no está en la tupla, es una ciudad secundaria.")
 
 # 18 -  Ingresa el valor de una compra. Si es mayor de $200.000 aplica un 15% de descuento. Entre $100.000 y $200.000 aplica 10%. Si es menor, no hay descuento.
 

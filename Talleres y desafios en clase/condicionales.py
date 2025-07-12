@@ -60,13 +60,8 @@ num_tres = float(input("Ingresa un tercer numero no puede ser igual al otro: "))
 if num_uno > num_dos and num_uno > num_tres:
     print(f"El número mayor es: {num_uno}")
 elif num_dos > num_uno and num_dos > num_tres:
-<<<<<<< HEAD
     print(f"El número mayor es: {num_dos}")
 elif num_tres > num_uno and num_tres > num_dos:
-=======
-    print(f"El número mayor es: {num2}")
-elif num_tres > num_uno and num_tres > num2:
->>>>>>> a615a1139b4b29b0f60159acf3ab4b7a9052425a
     print(f"El número mayor es: {num_tres}")
 else:
     print("Hay al menos dos números iguales")
@@ -79,11 +74,7 @@ precio = float(input("¿A cuanto esta el precio de la papa actualmente?: "))
 if precio > 100:
     prod = precio * 0.10
     preciofinal = precio - prod
-<<<<<<< HEAD
     print(f"El precio final con el 10% de descuento de {precio}$ de la papa  es {preciofinal}$")
-=======
-    print(f"El precio final con el 10% de descuento de {precio}$ de la papa  es {prod}$")
->>>>>>> a615a1139b4b29b0f60159acf3ab4b7a9052425a
 else:
     print(f"El producto esta en menos que 100$,es un buen precio y no se le hara descuento")
 
@@ -192,17 +183,10 @@ if '.' in numero:
     decimales = numero.split('.')[1]
     if len(decimales) == 1:
         print("El numero tiene 1 decimal")
-<<<<<<< HEAD
     elif len(decimales) == 2:
         print("El numero tiene 2 decimales")
     else:
         print("El numero tiene más de 2 decimales")
-=======
-    elif len(decimales) > 2:
-        print("El numero tiene más de 2 decimales")
-    else:
-        print("El numero tiene 2 decimales")
->>>>>>> a615a1139b4b29b0f60159acf3ab4b7a9052425a
 else:
     print("No tiene decimales")
 
@@ -411,11 +395,7 @@ print("------Ejercicio 13 ------")
 calificacion =  float(input("Ingresa tu nota en Programacion: "))
 if calificacion < 3:
     print("Tu calificacion es reprobado,te esperamos el otro año :)")
-<<<<<<< HEAD
 elif calificacion >= 3 and calificacion < 4:
-=======
-elif calificacion > 3 and calificacion < 4:
->>>>>>> a615a1139b4b29b0f60159acf3ab4b7a9052425a
     print("Tu calificacion es aprobatoria pero regular,ve avanzando")
 else:
     print("Tu nota es excelente,vas bien!")
@@ -466,11 +446,7 @@ if edad333 > 0 and edad333 <= 12:
     print(f"Eres un niño aun por tener {edad333} años")
 elif edad333  >= 13 and edad333 <= 17:
     print(f"Eres un adolescente por tener {edad333} años,que dura etapa!")
-<<<<<<< HEAD
 elif edad333 >= 18 and edad333 < 64:
-=======
-elif edad333 > 18 and edad333 < 64:
->>>>>>> a615a1139b4b29b0f60159acf3ab4b7a9052425a
     print("Eres un adulto ya,felicidades")
 else:
     print("Eres un adulto mayor lo sentimos")
@@ -506,11 +482,7 @@ if compra > 200000:
     descu = compra * 0.15
     descuento_final = compra - descu
     print(f"El precio final a pagar con un 15% de descuento del Televisor por un precio mayor a 200000$ es {descuento_final}$")
-<<<<<<< HEAD
 elif compra >= 100000 and compra <= 200000:
-=======
-elif compra > 100000 and compra < 200000:
->>>>>>> a615a1139b4b29b0f60159acf3ab4b7a9052425a
     descu2 = compra * 0.10
     descuento_final2 = compra - descu2
     print(f"El precio final a pagar con un 10% de descuento del televisor por un precio entre 100000 y 200000$ es: {descuento_final2}$")
@@ -521,7 +493,6 @@ else:
 
 print("------Ejercicio 19 ------")
 
-<<<<<<< HEAD
 nombreeee = input("Ingresa tu nombre: ")
 horas = int(input("Ingresa el numero de horas trabajadas: "))
 tarifa = 10000
@@ -534,28 +505,18 @@ if horas > 40:
 else:
     print(f"{nombreeee}, tu salario será de {salario_base}$ ya que no trabajaste más de 40 horas. Gracias por tu servicio.")
 
-=======
-
-nombreeee = input("Ingresa tu nombre: ")
-horas = int(input("Ingresa el numero de horas trabajadas: "))
-tarifa = 10000
-if horas  < 40:
-    print(f"Tu salario sera de $10.000/hora ya que no trabajaste mas de 40 horas,gracias por su servicio")
-else:
-    abono = horas * 0.20
-    abono2 = tarifa + abono
-    print(f"Tu tarifa de $10.000/hora se le abono un 20% dando un total de {abono2}$:")
->>>>>>> a615a1139b4b29b0f60159acf3ab4b7a9052425a
 
 # 20 - Ingresa tu puntaje en una prueba (0 a 100). Si es menor a 50, insuficiente. De 50 a 79, aceptable. 80 a 100, sobresaliente.
 
 print("------Ejercicio 20 ------")
 
-
 puntaje = int(input("Ingresa tu puntaje en las olimpiadas de 0 a 100: "))
+
 if puntaje < 50:
-    print(f"Tu puntaje de {puntaje} puntos es un puntaje insufciente,siguelo intentando!")
-elif puntaje > 50 and puntaje < 79:
-    print(f"Tu puntaje de {puntaje} puntos es un puntaje aceptable,muy bien!")
+    print(f"Tu puntaje de {puntaje} puntos es un puntaje insuficiente, ¡sigue intentando!")
+elif 50 <= puntaje <= 79:
+    print(f"Tu puntaje de {puntaje} puntos es un puntaje aceptable, ¡muy bien!")
+elif 80 <= puntaje <= 100:
+    print(f"Tu puntaje de {puntaje} puntos es sobresaliente, ¡felicitaciones!")
 else:
-    print(f"Tu puntaje de {puntaje} puntos es sobresaliente,felicitaciones!!")
+    print("Puntaje fuera del rango válido (0-100).")

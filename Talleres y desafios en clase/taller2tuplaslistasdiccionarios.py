@@ -11,8 +11,8 @@ print("------------------ Ejercicio 1 --------------------")
 lista = []
 print(lista)
 notanum1 = float(input("Ingresa tu primera nota en Programacion: ")) # Para pedir la primer nota al usuario
-notanum2 = float(input("Ingresa tu primera nota en Programacion: ")) # Para pedir la segunda nota al usuario
-notanum3 = float(input("Ingresa tu primera nota en Programacion: ")) # Para pedir la tercera nota al usuario
+notanum2 = float(input("Ingresa tu segunda nota en Programacion: ")) # Para pedir la segunda nota al usuario
+notanum3 = float(input("Ingresa tu tercera nota en Programacion: ")) # Para pedir la tercera nota al usuario
 proceso = notanum1 + notanum2 + notanum3
 proceso1 = proceso/3
 lista.append(notanum1) # Para añadir la primer nota al final de la lista
